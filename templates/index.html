@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block title %}
+    home
+{% endblock %}
+
+{% block body %}
+<div class="index">
+    <section class="container bg-light mt-5">
+            <h1>Koneksi Flask Database</h1>
+            <div class="mb-3"></div>
+            <a href="/logout" class="btn btn-primary">LogOut</a>
+            <!-- table bootstrap --> 
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">USERNAME</th>
+                    <th scope="col">PASSWORD</th>
+                    <th scope="col">EMAIL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- looping baris data -->
+                {% for row in users %}
+                <tr>
+                    <th scope="row"> {{row.0}} </th>
+                    <td> {{row.1}} </td>
+                    <td> {{row.2}} </td>
+                    <td> {{row.3}} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+</section>
+</div>
+
+{% endblock %}

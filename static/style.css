@@ -1,0 +1,10 @@
+.login {
+    background-image: url("../static/bg.jpeg");
+    background-size: cover;
+}
+
+body {
+    background-image: url("../static/kk.jpg");
+    background-size: cover;
+    
+}

@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block title %} Login {% endblock %}
+
+
+{% block body %}
+<div class="login">
+
+  <section class="vh-100" >
+    <div class="container py-5 h-100">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="card shadow p-3 mb-3 bg-body" style="border-radius: 1rem; width: 25rem;">
+          <div class="card-body text-center p-5">
+            <img src="../static/user.png" alt="" class="card-img-top mb-3" style="border-radius: 50rem; width: 150px">
+            <h3 class="mb-3">Sign in</h3>
+                    <form method="POST">
+                        <div class="mb-3">
+                          <input type="email" class="form-control" name="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                          <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Login</button>
+                      </form>
+                      <a href="/register">durung ana akun?</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+</div>
+  {% endblock %}
